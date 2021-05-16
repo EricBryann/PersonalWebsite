@@ -9,8 +9,6 @@ const AddPost: React.FC = () => {
     e.preventDefault();
     const title = e.target.title.value;
     const content = e.target.content.value;
-    console.log(title);
-    console.log(content);
     await databaseQuery("POST", {title, content});
     router.push("/blog")
   };
