@@ -36,7 +36,6 @@ const Form: React.FC<FormInterface> = ({
   onTitleChange,
   onContentChange
 }) => {
-  console.log(<ReactMarkdown remarkPlugins={[gfm]} children={secondValue}/>)
   return (
     <div className="w-screen h-screen flex justify-center items-center bg-green-100">
       <form

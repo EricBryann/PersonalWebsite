@@ -7,7 +7,6 @@ const id = ({ data }) => {
   const router = useRouter();
   const idx = router.query.id;
   data = data.filter((item) => item._id === idx);
-  console.log(data);
   const [title, changeTitle] = useState<string>(data[0].title);
   const [content, changeContent] = useState<string>(data[0].content);
   const updatePost = async (event) => {
