@@ -11,7 +11,7 @@ const Admin = () => {
     
     const email = e.target.email.value;
     const password = e.target.password.value;
-    if(email === "test@gmail.com" && password === "testing") {
+    if(email === process.env.adminEmail && password === process.env.adminPassword) {
       Auth.setIsAuthenticated(true);
       router.push("/blog");
     }
