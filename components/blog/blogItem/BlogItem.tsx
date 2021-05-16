@@ -36,15 +36,15 @@ const BlogItem: React.FC<BlogItemInterface> = ({ title, content, id }) => {
       className="relative flex flex-col justify-center items-center bg-gray-100 w-2/3 rounded-lg my-4"
     >
       <div className="absolute left-2 top-2 w-8 h-4 flex">
-        <FacebookShareButton url={`http://localhost:3000/blog/` + id}>
+        <FacebookShareButton url={process.env.URL + "blog/" + id}>
           <FacebookIcon className="w-10 h-10" round={true}></FacebookIcon>
         </FacebookShareButton>
         <div className="px-1"></div>
-        <WhatsappShareButton url={`http://localhost:3000/blog/` + id}>
+        <WhatsappShareButton url={process.env.URL + "blog/" + id}>
           <WhatsappIcon className="w-10 h-10" round={true}></WhatsappIcon>
         </WhatsappShareButton>
         <div className="px-1"></div>
-        <TelegramShareButton url={`http://localhost:3000/blog/` + id}>
+        <TelegramShareButton url={process.env.URL + "blog/" + id}>
           <TelegramIcon className="w-10 h-10" round={true}></TelegramIcon>
         </TelegramShareButton>
       </div>
