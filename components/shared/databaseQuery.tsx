@@ -12,9 +12,9 @@ const databaseQuery = async (
 ) => {
   if (!id) {
     if (method === "GET") {
-      const res = await fetch("https://my-personal-website-ericbryann.vercel.app/api/posts/");
+      const res = await fetch("https://ericbryann.vercel.app/api/posts/");
       const { data } = await res.json();
-      return {data};
+      return { data };
     }
     if (method === "POST") {
       await axios
