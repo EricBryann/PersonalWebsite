@@ -76,20 +76,15 @@ const Form: React.FC<FormInterface> = ({
           )}
           {type === "input" ? (
             <input className="p-1" type={secondType} name={secondName}></input>
-          ) : firstTitle ? (
+          ) : (
             <textarea
               className="p-1"
               name={secondName}
-              rows={10}
-              cols={50}
+              rows={20}
+              cols={80}
               value={secondValue}
               onChange={onContentChange}
             ></textarea>
-          ) : (
-            <div className="p-1 bg-white rounded-md w-60 h-60">
-              {/* <ReactMarkdown remarkPlugins={[gfm]} children={secondValue}/> */}
-              {secondValue}
-            </div>
           )}
         </div>
         {!readOnly && (
