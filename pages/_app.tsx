@@ -1,14 +1,16 @@
 import "../styles/globals.css";
-import Authentication from "../components/Authentication"; 
-import {useState} from "react"
+import Authentication from "../components/Authentication";
+import { useState } from "react";
 
 function MyApp({ Component, pageProps }) {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(true);
   return (
-    <Authentication.Provider value={{
-      isAuthenticated,
-      setIsAuthenticated,
-    }}>
+    <Authentication.Provider
+      value={{
+        isAuthenticated,
+        setIsAuthenticated,
+      }}
+    >
       <Component {...pageProps} />
     </Authentication.Provider>
   );

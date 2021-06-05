@@ -2,10 +2,14 @@ import React, { useContext } from "react";
 import Authentication from "../../Authentication";
 import databaseQuery from "../../shared/databaseQuery";
 import { useRouter } from "next/router";
-import { FacebookShareButton, TelegramShareButton, WhatsappShareButton } from "react-share";
-import { FacebookIcon ,TelegramIcon, WhatsappIcon } from "react-share";
-import ReactMarkdown from "react-markdown"
-import gfm from "remark-gfm"
+import {
+  FacebookShareButton,
+  TelegramShareButton,
+  WhatsappShareButton,
+} from "react-share";
+import { FacebookIcon, TelegramIcon, WhatsappIcon } from "react-share";
+// import ReactMarkdown from "react-markdown"
+import gfm from "remark-gfm";
 
 interface BlogItemInterface {
   title: string;
@@ -33,19 +37,19 @@ const BlogItem: React.FC<BlogItemInterface> = ({ title, content, id }) => {
   return (
     <div
       id={id}
-      className="relative flex flex-col justify-center items-center bg-gray-100 w-2/3 rounded-lg my-4"
+      className="relative flex flex-col items-center justify-center w-2/3 my-4 bg-gray-100 rounded-lg"
     >
-      <div className="absolute left-2 top-2 w-8 h-4 flex">
+      <div className="absolute flex w-8 h-4 left-2 top-2">
         <FacebookShareButton url={process.env.URL + "blog/" + id}>
-          <FacebookIcon className="w-10 h-10" round={true}></FacebookIcon>
+          <FacebookIcon className="w-6 h-6" round={true}></FacebookIcon>
         </FacebookShareButton>
         <div className="px-1"></div>
         <WhatsappShareButton url={process.env.URL + "blog/" + id}>
-          <WhatsappIcon className="w-10 h-10" round={true}></WhatsappIcon>
+          <WhatsappIcon className="w-6 h-6" round={true}></WhatsappIcon>
         </WhatsappShareButton>
         <div className="px-1"></div>
         <TelegramShareButton url={process.env.URL + "blog/" + id}>
-          <TelegramIcon className="w-10 h-10" round={true}></TelegramIcon>
+          <TelegramIcon className="w-6 h-6" round={true}></TelegramIcon>
         </TelegramShareButton>
       </div>
 
@@ -54,25 +58,30 @@ const BlogItem: React.FC<BlogItemInterface> = ({ title, content, id }) => {
           <button
             id={id}
             onClick={updateHandler}
-            className="mr-2 p-1 border-2 border-blue-400 rounded-lg hover:bg-yellow-300"
+            className="p-1 mr-2 border-2 border-blue-400 rounded-lg hover:bg-yellow-300"
           >
             Update
           </button>
           <button
             id={id}
             onClick={deleteHandler}
-            className="mr-2 p-1 border-2 border-blue-400 rounded-lg hover:bg-yellow-300"
+            className="p-1 mr-2 border-2 border-blue-400 rounded-lg hover:bg-yellow-300"
           >
             Delete
           </button>
         </div>
       )}
-      <div className="font-bold text-3xl py-4">{title}</div>
+      <div className="py-4 text-3xl font-bold">{title}</div>
       <div>
         <span className="px-4">
-          <ReactMarkdown remarkPlugins={[gfm]} children={content.substr(0,100)}/>
+          {/* <ReactMarkdown remarkPlugins={[gfm]} children={content.substr(0,100)}/> */}
+          {content.substr(0, 100)}
         </span>
-        <span onClick={gotoPage} id={id} className="flex justify-center items-center text-blue-500 cursor-pointer">
+        <span
+          onClick={gotoPage}
+          id={id}
+          className="flex items-center justify-center text-blue-500 cursor-pointer"
+        >
           ...View More
         </span>
       </div>

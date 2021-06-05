@@ -4,21 +4,21 @@ import PortfolioExperiencesItem from "./PortfolioExperiencesItem";
 
 const items = [
   {
-    title: "Software Engineer at GreenDay (Feb 2021 - Now)",
+    title: "Software Engineer at JoniAI (June 2021 - August 2021)",
     description: [
+      "Designed and Developed core features using Typescript, ReactJS, NextJS, and MongoDB.",
+    ],
+  },
+  {
+    title: "Software Engineer at GreenDay (Feb 2021 - May 2021)",
+    description: [
+      "Developed core features using Angular, Node, Express, and Postgresql",
       "Enhancing the search feature with Algolia for a quicker search and to ignore typo, improving users’ searching experiences.",
       "Implemented Google Tag Manager to track users’ most frequently used features for analytic purposes.",
       "Updating daily incoming products to the database using PostgreSQL.",
       "Fixing bugs and issues for frontend and backend using Angular and NodeJS",
     ],
   },
-  {
-    title: "Teaching at Eunoia Junior College (Jan 2020 - Aug 2020)",
-    description: [
-      "Mentoring a student one-on-one for A level H2 Mathematics",
-      "Making summary notes and practice questions for mentees"
-    ]
-  }
 ];
 const PortfolioExperiences: React.FC = () => {
   return (

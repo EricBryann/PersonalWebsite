@@ -14,13 +14,20 @@ const items = [
     imageUrl: "/TodoList.png",
     githubUrl: "https://github.com/EricBryann/ToDoList",
     title: "To Do List app",
-    description: "A user can post/delete notes.",
+    description: "A user can post/delete notes to serve as reminders.",
   },
   {
     imageUrl: "/Diary.png",
     githubUrl: "https://github.com/EricBryann/Diary-Application",
     title: "Diary app",
-    description: "A User can add, update, delete diary posts.",
+    description:
+      "A User can add, update, delete diary posts, documenting their daily activities.",
+  },
+  {
+    imageUrl: "/Simon.png",
+    githubUrl: "https://github.com/EricBryann/SimonGame",
+    title: "Simon Game",
+    description: "A simple game that I made to train your memory!.",
   },
 ];
 const PortfolioProjects: React.FC = () => {
@@ -31,7 +38,9 @@ const PortfolioProjects: React.FC = () => {
       imageSrc="/smartphone.png"
       bgColor="bg-yellow-100"
     >
-      <div className="text-red-700 pl-6 mb-6">Click on the title to go to the github repository</div>
+      <div className="pl-6 mb-6 text-red-700">
+        Click on the title to go to the github repository
+      </div>
       {items.map((item, id) => (
         <PortfolioProjectsItem
           key={id}
