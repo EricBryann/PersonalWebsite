@@ -12,13 +12,13 @@ const databaseQuery = async (
 ) => {
   if (!id) {
     if (method === "GET") {
-      const res = await fetch("https://ericbryann.vercel.app/api/posts/");
+      const res = await fetch("https://ericbryan.vercel.app/api/posts/");
       const { data } = await res.json();
       return { data };
     }
     if (method === "POST") {
       await axios
-        .post(process.env.URL + "api/posts", body)
+        .post("https://ericbryan.vercel.app/api/posts/", body)
         .then((res) => {
           console.log(res);
         })
@@ -28,13 +28,13 @@ const databaseQuery = async (
     }
   } else {
     if (method === "GET") {
-      const res = await fetch(process.env.URL + "api/posts/" + id);
+      const res = await fetch("https://ericbryan.vercel.app/api/posts/" + id);
       const { data } = await res.json();
       return { data };
     } else if (method === "PUT") {
-      await axios.put(process.env.URL + "api/posts/" + id, body);
+      await axios.put("https://ericbryan.vercel.app/api/posts/" + id, body);
     } else if (method === "DELETE") {
-      await axios.delete(process.env.URL + "api/posts/" + id);
+      await axios.delete("https://ericbryan.vercel.app/api/posts/" + id);
     }
   }
 };

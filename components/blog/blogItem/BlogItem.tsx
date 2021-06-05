@@ -40,15 +40,15 @@ const BlogItem: React.FC<BlogItemInterface> = ({ title, content, id }) => {
       className="relative flex flex-col items-center justify-center w-2/3 my-4 bg-gray-100 rounded-lg"
     >
       <div className="absolute flex w-8 h-4 left-2 top-2">
-        <FacebookShareButton url={process.env.URL + "blog/" + id}>
+        <FacebookShareButton url={"https://ericbryan.vercel.app/blog/" + id}>
           <FacebookIcon className="w-6 h-6" round={true}></FacebookIcon>
         </FacebookShareButton>
         <div className="px-1"></div>
-        <WhatsappShareButton url={process.env.URL + "blog/" + id}>
+        <WhatsappShareButton url={"https://ericbryan.vercel.app/blog/" + id}>
           <WhatsappIcon className="w-6 h-6" round={true}></WhatsappIcon>
         </WhatsappShareButton>
         <div className="px-1"></div>
-        <TelegramShareButton url={process.env.URL + "blog/" + id}>
+        <TelegramShareButton url={"https://ericbryan.vercel.app/blog/" + id}>
           <TelegramIcon className="w-6 h-6" round={true}></TelegramIcon>
         </TelegramShareButton>
       </div>
