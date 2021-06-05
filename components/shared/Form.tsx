@@ -80,8 +80,8 @@ const Form: React.FC<FormInterface> = ({
             <textarea
               className="p-1"
               name={secondName}
-              rows={20}
-              cols={80}
+              rows={18}
+              cols={75}
               value={secondValue}
               onChange={onContentChange}
             ></textarea>
