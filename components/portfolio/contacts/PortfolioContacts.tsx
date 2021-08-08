@@ -7,11 +7,11 @@ const PortfolioContacts: React.FC = () => {
   return (
     <Section
       id="contacts"
-      bgColor="bg-gray-400"
+      bgColor="bg-gray-300"
       title="Contacts"
       imageSrc="/letter.png"
     >
-      <div className="px-6 md:flex">
+      <div className="md:flex">
         <div className="md:w-1/2">
           <SocialMedia
             imageSrc="/phone.png"

@@ -4,18 +4,25 @@ import Section from "../Section";
 
 const items = [
   {
+    imageUrl: "/pathfinding.png",
+    githubUrl: "https://github.com/EricBryann/pathfinding_visualizer",
+    title: "Pathfinding Visualizer",
+    description:
+      "This is a pathfinding visualizer I built after my data structures and algorithm course in NUS. A user can drag a starting and ending points, adding some walls/obstacles, and visualize the path without going through the walls / obstacles",
+  },
+  {
     imageUrl: "/socialMedia.png",
     githubUrl: "https://github.com/EricBryann/MERN-Application",
     title: "Social media app",
     description:
       "Simulating Instagram app, a user can signup/login and post pictures with descriptions for other users to see",
   },
-  {
-    imageUrl: "/TodoList.png",
-    githubUrl: "https://github.com/EricBryann/ToDoList",
-    title: "To Do List app",
-    description: "A user can post/delete notes to serve as reminders.",
-  },
+  // {
+  //   imageUrl: "/TodoList.png",
+  //   githubUrl: "https://github.com/EricBryann/ToDoList",
+  //   title: "Note keeper app",
+  //   description: "A user can post/delete small notes to serve as reminders.",
+  // },
   {
     imageUrl: "/Diary.png",
     githubUrl: "https://github.com/EricBryann/Diary-Application",
@@ -39,7 +46,8 @@ const PortfolioProjects: React.FC = () => {
       bgColor="bg-yellow-100"
     >
       <div className="pl-6 mb-6 text-red-700">
-        Click on the title to go to the github repository
+        Click on the title to go to the github repository, which also contains
+        the apps links
       </div>
       {items.map((item, id) => (
         <PortfolioProjectsItem

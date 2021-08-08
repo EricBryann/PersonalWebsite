@@ -17,10 +17,10 @@ const Section: React.FC<SectionInterface> = ({
 }) => {
   return (
     <div className={bgColor}>
-      <div id={id} className="md:px-24 px-4 py-12">
-        <div className="font-bold text-3xl mb-4">
+      <div id={id} className="px-4 py-12 md:px-24">
+        <div className="mb-4 text-3xl font-bold">
           {title}
-          <img className="w-10 h-10 inline ml-5" src={imageSrc} />
+          <img className="inline w-10 h-10 ml-5" src={imageSrc} />
         </div>
         {children}
       </div>

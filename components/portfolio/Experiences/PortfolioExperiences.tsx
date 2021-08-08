@@ -6,17 +6,27 @@ const items = [
   {
     title: "Software Engineer at JoniAI (June 2021 - August 2021)",
     description: [
-      "Designed and Developed core features using Typescript, ReactJS, NextJS, and MongoDB.",
+      "Designed and developed server-rendered single-page application using Typescript, ReactJS, NextJS, and MongoDB.",
+      "Created more than 10 different pages with working frontend and backend from scratch.",
+      "Wrote end-to-end and integration tests using cypress for the pages created.",
+      "Built and wrote documentations for more than 10 different reusable components.",
     ],
   },
   {
     title: "Software Engineer at GreenDay (Feb 2021 - May 2021)",
     description: [
-      "Developed core features using Angular, Node, Express, and Postgresql",
-      "Enhancing the search feature with Algolia for a quicker search and to ignore typo, improving users’ searching experiences.",
+      "Developed core features using Angular, Node, Express, and Postgresql.",
+      "Liaised with the engineering team for possible app improvement.",
+      "Enhanced the search feature with Algolia for a quicker and seamless searching experiences.",
       "Implemented Google Tag Manager to track users’ most frequently used features for analytic purposes.",
-      "Updating daily incoming products to the database using PostgreSQL.",
-      "Fixing bugs and issues for frontend and backend using Angular and NodeJS",
+      "Updated daily incoming products to the database using PostgreSQL.",
+    ],
+  },
+  {
+    title: "Teaching Assistant at NUS",
+    description: [
+      "Conduct weekly tutorials, consultations, and code reviews.",
+      "CS1010 (Programming Methodology) (July 2021 - Dec 2021)",
     ],
   },
 ];
