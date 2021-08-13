@@ -16,8 +16,8 @@ const Section: React.FC<SectionInterface> = ({
   bgColor,
 }) => {
   return (
-    <div className={bgColor}>
-      <div id={id} className="px-4 py-12 md:px-24">
+    <div className={bgColor} id={id}>
+      <div className="px-4 py-20 md:px-24">
         <div className="mb-4 text-3xl font-bold">
           {title}
           <img className="inline w-10 h-10 ml-5" src={imageSrc} />

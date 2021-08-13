@@ -9,14 +9,17 @@ interface Nav {
 
 const NavBar: React.FC<Nav> = ({ text, url, hasArrow }) => {
   return (
-    <div className="text-white font-bold p-1 md:p-3 md:text-2xl sm:text hover:text-green-400 flex">
-      {hasArrow && 
-      <Link href={url}>
-        <img className="mr-4 text-green-200 inline cursor-default" width={30} src="/arrow.png"/>
-      </Link>}
-      <Link href={url}>
-          {text}
-      </Link>
+    <div className="flex p-1 font-bold text-white md:p-3 md:text-2xl sm:text hover:text-green-400">
+      {hasArrow && (
+        <Link href={url}>
+          <img
+            className="inline mr-4 text-green-200 cursor-default"
+            width={30}
+            src="/arrow.png"
+          />
+        </Link>
+      )}
+      <Link href={url}>{text}</Link>
     </div>
   );
 };

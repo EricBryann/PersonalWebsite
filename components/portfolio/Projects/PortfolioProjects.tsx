@@ -45,10 +45,6 @@ const PortfolioProjects: React.FC = () => {
       imageSrc="/smartphone.png"
       bgColor="bg-yellow-100"
     >
-      <div className="pl-6 mb-6 text-red-700">
-        Click on the title to go to the github repository, which also contains
-        the apps links
-      </div>
       {items.map((item, id) => (
         <PortfolioProjectsItem
           key={id}

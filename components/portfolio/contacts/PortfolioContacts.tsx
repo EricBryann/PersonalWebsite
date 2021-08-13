@@ -15,7 +15,7 @@ const PortfolioContacts: React.FC = () => {
         <div className="md:w-1/2">
           <SocialMedia
             imageSrc="/phone.png"
-            content="+6585916922"
+            content="+65 85916922"
           ></SocialMedia>
           <SocialMedia
             imageSrc="/gmail.png"
