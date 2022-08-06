@@ -12,7 +12,7 @@ const items = [
   },
   {
     imageUrl: "/peggle.png",
-    url: "",
+    url: "https://youtu.be/M4gTYZ1Ozps",
     title: "Peggle Clone",
     description:
       "(Swift, SQL) A Peggle game clone. Wrote Physics Engine and Game Engine from scratch.",
