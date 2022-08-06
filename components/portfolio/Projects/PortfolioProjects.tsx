@@ -4,37 +4,39 @@ import Section from "../Section";
 
 const items = [
   {
+    imageUrl: "/cloudJumpers.png",
+    url: "https://github.com/EricBryann/CloudJumpers",
+    title: "Cloud Jumpers",
+    description:
+      "(Swift) An online multiplayer platformer game. Developed an event-based Game Engine, similar to Flux architecture. Awarded 1st place (Champion) for NUS 20th STePs.",
+  },
+  {
+    imageUrl: "/peggle.png",
+    url: "",
+    title: "Peggle Clone",
+    description:
+      "(Swift, SQL) A Peggle game clone. Wrote Physics Engine and Game Engine from scratch.",
+  },
+  {
     imageUrl: "/pathfinding.png",
-    githubUrl: "https://github.com/EricBryann/pathfinding_visualizer",
+    url: "https://pathfinding-visualizer-nine.vercel.app/",
     title: "Pathfinding Visualizer",
     description:
-      "This is a pathfinding visualizer I built after my data structures and algorithm course in NUS. A user can drag a starting and ending points, adding some walls/obstacles, and visualize the path without going through the walls / obstacles",
+      "(React) An interactive gamified pathfinding visualizer built for my CS2040C (Data Structures and Algorithms) class.",
+  },
+  {
+    imageUrl: "/sorting.png",
+    url: "https://sorting-visualizer-sigma.vercel.app/",
+    title: "Sorting Visualizer",
+    description:
+      "(React) An interactive sorting visualizer built for my CS1010 (Programming Methodology) class.",
   },
   {
     imageUrl: "/socialMedia.png",
-    githubUrl: "https://github.com/EricBryann/MERN-Application",
+    url: "https://share-it.vercel.app/",
     title: "Social media app",
     description:
-      "Simulating Instagram app, a user can signup/login and post pictures with descriptions for other users to see",
-  },
-  // {
-  //   imageUrl: "/TodoList.png",
-  //   githubUrl: "https://github.com/EricBryann/ToDoList",
-  //   title: "Note keeper app",
-  //   description: "A user can post/delete small notes to serve as reminders.",
-  // },
-  {
-    imageUrl: "/Diary.png",
-    githubUrl: "https://github.com/EricBryann/Diary-Application",
-    title: "Diary app",
-    description:
-      "A User can add, update, delete diary posts, documenting their daily activities.",
-  },
-  {
-    imageUrl: "/Simon.png",
-    githubUrl: "https://github.com/EricBryann/SimonGame",
-    title: "Simon Game",
-    description: "A simple game that I made to train your memory!.",
+      "(MongoDB, Express, React, NodeJS) An instagram-like social media application.",
   },
 ];
 const PortfolioProjects: React.FC = () => {
@@ -49,7 +51,7 @@ const PortfolioProjects: React.FC = () => {
         <PortfolioProjectsItem
           key={id}
           imageUrl={item.imageUrl}
-          githubUrl={item.githubUrl}
+          url={item.url}
           title={item.title}
           description={item.description}
         />

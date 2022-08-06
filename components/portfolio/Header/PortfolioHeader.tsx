@@ -38,8 +38,8 @@ const PortfolioHeader: React.FC = () => {
             Eric Bryan
           </div>
           <div className="mb-12 text-2xl text-blue-400">
-            Hi! 😁 I am Eric Bryan, currently a year 2 Computer Engineering
-            student at the National Univerity of Singapore (NUS). I love tech
+            Hi! 😁 I am Eric Bryan, currently a year 3 Computer Engineering
+            student at the National Univerity of Singapore (NUS) (Aug 2020 - June 2024). I love tech
             and would love to change the world through tech :)
           </div>
         </div>

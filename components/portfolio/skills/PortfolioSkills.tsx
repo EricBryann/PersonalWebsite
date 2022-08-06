@@ -1,6 +1,7 @@
 import React from "react";
 import { FaReact, FaGitAlt, FaAngular, FaNodeJs } from "react-icons/fa";
 import {
+  SiGo,
   SiCplusplus,
   SiJavascript,
   SiTypescript,
@@ -29,6 +30,10 @@ const PortfolioSkills: React.FC = () => {
           <div className="flex flex-col items-center mr-6 text-blue-800">
             <SiCplusplus size={60} />
             <div>C++</div>
+          </div>
+          <div className="flex flex-col items-center mr-6 text-blue-400">
+            <SiGo size={60} />
+            <div>Go</div>
           </div>
           <div className="flex flex-col items-center mr-6 text-yellow-600">
             <AiFillHtml5 size={60} />

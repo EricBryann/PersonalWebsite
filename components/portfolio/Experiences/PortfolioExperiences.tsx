@@ -4,29 +4,34 @@ import PortfolioExperiencesItem from "./PortfolioExperiencesItem";
 
 const items = [
   {
-    title: "Software Engineer at JoniAI (June 2021 - August 2021)",
+    company: "Shopee",
+    title: "Software Engineer Intern (May 2022 - August 2022)",
     description: [
-      "Designed and developed server-rendered single-page application using Typescript, ReactJS, NextJS, and MongoDB.",
-      "Created more than 10 different pages with working frontend and backend from scratch.",
-      "Wrote end-to-end and integration tests using cypress for the pages created.",
-      "Built and wrote documentations for more than 10 different reusable components.",
+      "Automated failed dependency APIs detections using Jaeger and Kafka, reducing the overall services downtime by 80%, measured by weekly services performance report.",
+      "Built a chat bot using websocket to investigate the root cause of a failed HTTP request by scraping Shopee's log platform, currently being used by over 40 engineers at Shopee."
     ],
   },
   {
-    title: "Software Engineer at GreenDay (Feb 2021 - May 2021)",
+    company: "Joni.AI",
+    title: "Software Engineer Intern (June 2021 - August 2021)",
     description: [
-      "Developed core features using Angular, Node, Express, and Postgresql.",
-      "Liaised with the engineering team for possible app improvement.",
-      "Enhanced the search feature with Algolia for a quicker and seamless searching experiences.",
-      "Implemented Google Tag Manager to track users’ most frequently used features for analytic purposes.",
-      "Updated daily incoming products to the database using PostgreSQL.",
+      "Developed a full stack web application for clients."
     ],
   },
   {
-    title: "Teaching Assistant at NUS",
+    company: "GreenDay",
+    title: "Software Engineer Intern (Feb 2021 - May 2021)",
     description: [
-      "Conduct weekly tutorials, consultations, and code reviews.",
-      "CS1010 (Programming Methodology) (July 2021 - Dec 2021)",
+      "Integrated Google Tag Manager to track features usage frequency",
+      "Integrated Algolia to the search feature, increasing the search bar usage by 200% as measured by Google Tag Manager."
+    ],
+  },
+  {
+    company: "NUS",
+    title: "Teaching Assistant",
+    description: [
+      "CS2040C (Data Structures and Algorithms) (Jan 2022 - May 2022)",
+      "CS1010 (Programming Methodology) (July 2021 - Dec 2021)"
     ],
   },
 ];
@@ -41,6 +46,7 @@ const PortfolioExperiences: React.FC = () => {
       {items.map((item, id) => (
         <PortfolioExperiencesItem
           key={id}
+          company = {item.company}
           title={item.title}
           description={item.description}
         />

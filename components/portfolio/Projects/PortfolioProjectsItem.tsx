@@ -3,14 +3,14 @@ import Link from "next/link";
 
 interface PortfolioItem {
   imageUrl: string;
-  githubUrl: string;
+  url: string;
   title: string;
   description: string;
 }
 
 const PortfolioProjectsItem: React.FC<PortfolioItem> = ({
   imageUrl,
-  githubUrl,
+  url,
   title,
   description,
 }) => {
@@ -18,13 +18,15 @@ const PortfolioProjectsItem: React.FC<PortfolioItem> = ({
     <div className="pb-5 pt-5">
       <div className="border-b-2 border-pink-50 flex justify-content item-center px-6 pb-3">
         <div className="w-1/3 mr-6">
-          <img src={imageUrl} />
+          <img height="40" src={imageUrl} />
         </div>
         <div className="w-2/3">
           <div className="font-bold mb-3 hover:text-yellow-500 text-2xl">
-            <Link href={githubUrl}>
-              <a target="_blank">{title}</a>
-            </Link>
+            {url != "" ?
+              <Link href={url}>
+                <a target="_blank">{title}</a>
+              </Link> : <div>{title}</div>
+            }
           </div>
           <div className="">{description}</div>
         </div>
